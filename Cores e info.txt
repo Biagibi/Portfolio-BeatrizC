@@ -1,0 +1,21 @@
+Exercicio input: https://biagibi.github.io/Exercicio-de-input/ 
+
+java: https://biagibi.github.io/Javascript-Biagibi/
+
+Projeto Cordel: https://biagibi.github.io/Projeto-Cordel/
+
+
+
+#879c57 escuro
+#e7e9c9 medio
+#f2f4e6 clarinho
+#fbfefc bem claro
+
+#546332 texto
+
+
+COLOCAR UMA FIGUERI DE MAÇA VERDE NO SITE
+
+“chat revisa responsividade completa”
+
+versão dark mode

@@ -239,7 +239,6 @@ nav a:hover {
 
 /* RESPONSIVO */
 
-
 @media (max-width: 992px) {
 
   .hero {
@@ -265,3 +264,6 @@ nav a:hover {
     font-size: 15px;
   }
 }
+
+
+/* 1- Coloquei o qr do insta, falta alterar o tamanho*/
