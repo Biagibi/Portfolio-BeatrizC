@@ -19,3 +19,5 @@ COLOCAR UMA FIGUERI DE MAÇA VERDE NO SITE
 “chat revisa responsividade completa”
 
 versão dark mode
+
+- colocar projeto figma
