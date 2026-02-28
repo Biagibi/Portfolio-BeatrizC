@@ -40,9 +40,6 @@ nav a:hover {
   transform: translate(5px, -3px) scale(1.05);
 }
 
-/* =========================
-   HERO - CONTAINER PRINCIPAL
-========================= */
 .hero {
   display: flex;
   align-items: center;
@@ -84,6 +81,17 @@ nav a:hover {
   font-family: 'Open Sans', sans-serif;
 }
 
+#skills, #projetos, #contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-skills, .titulo-projetos, .titulo-contato {
+  max-width: 380px;
+}
+
 
 /* =========================
    RESPONSIVIDADE
@@ -112,46 +120,66 @@ nav a:hover {
 }
 
 /* SKILLS */
-.skills {
-  text-align: center;
-  padding: 80px 10%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.skills h2 {
-  color: #546332;
-}
-
-.skill-container {
+.skills-container {
   display: flex;
+  gap: 25px;
   justify-content: center;
-  gap: 50px;
-  margin-top: 50px;
   flex-wrap: wrap;
 }
 
-.circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: conic-gradient(#355654 0%, #1a2527 0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.skill-card {
+  width: 160px;
+  height: 155px;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-.circle span {
+.card-inner {
+  width: 100%;
+  height: 100%;
   position: relative;
-  font-weight: bold;
-  font-size: 18px;
-  color: #080409;
+  transform-style: preserve-3d;
+  transition: transform 1.1s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 2cm;
-  height: 2cm;
-  margin: 0 auto;
+  backface-visibility: hidden;
+  padding: 15px;
+}
+
+.card-front {
+  background: #879c57;
+  color: white;
+}
+
+.card-front img {
+  width: 60px;
+  margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card-back {
+  background: #e7e9c9;
+  transform: rotateY(180deg);
+  display: block;
+  font-size: 14px;
+}
+
+.skill-card.virado .card-inner {
+  transform: rotateY(180deg) scale(1.02);
+}
+
+.skill-card:hover .card-front img {
+  transform: scale(1.1) rotate(3deg);
 }
 
 /* PROJETOS */

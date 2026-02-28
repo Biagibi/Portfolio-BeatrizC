@@ -53,54 +53,152 @@
 
 
 <section class="skills" id="skills">
-    <h2>Minhas Skills</h2>
-    <div class="skill-container">
+    <img src="imagens/skills.PNG" alt="Minhas Skills" class="titulo-skills">
 
-      <div class="skill">
-        <div class="circle" data-percent="100" data-img="imagens/html.png"><span>100%</span></div>
-        <p>HTML</p>
-      </div>
+    <div class="skills-container">
+      <div class="skills-container">
 
-      <div class="skill">
-        <div class="circle" data-percent="95" data-img="imagens/css.png"><span>95%</span></div>
-        <p>CSS</p>
-      </div>
+  <!-- HTML -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
 
-      <div class="skill">
-        <div class="circle" data-percent="55" data-img="imagens/js.png"><span>55%</span></div>
-        <p>JavaScript</p>
-      </div>
+        <div class="card-front">
+          <img src="imagens/html-5.png" alt="HTML">
+         <p>HTML</p>
+        </div>
 
-      <div class="skill">
-        <div class="circle" data-percent="60" data-img="imagens/github.png"><span>60%</span></div>
-        <p>GitHub</p>
+        <div class="card-back">
+          <strong>HTML</strong>
+          <p>Nível: Avançado</p>
+          <p>Semântica e acessibilidade</p>
+        </div>
       </div>
+    </div>
 
-      <div class="skill">
-        <div class="circle" data-percent="60" data-img="imagens/vscode.png"><span>60%</span></div>
-        <p>VS Code</p>
-      </div>
+  <!-- CSS -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
 
-      <div class="skill">
-        <div class="circle" data-percent="70" data-img="imagens/figma.png"><span>70%</span></div>
-        <p>Figma</p>
-      </div>
+        <div class="card-front">
+          <img src="imagens/css.png" alt="CSS">
+          <p>CSS</p>
+        </div>
 
-      <div class="skill">
-        <div class="circle" data-percent="50" data-img="imagens/react.png"><span>50%</span></div>
-        <p>React</p>
+        <div class="card-back">
+          <strong>CSS</strong>
+          <p>Nível: Avançado</p>
+          <p>Responsivo e animações</p>
+        </div>
       </div>
+    </div>
 
-      <div class="skill">
-        <div class="circle" data-percent="90" data-img="imagens/canva.png"><span>90%</span></div>
-        <p>Canva</p>
+  <!-- JavaScript -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/java.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+
+        <div class="card-back">
+          <strong>JavaScript</strong>
+          <p>Nível: Básico</p>
+          <p>Manipulação do DOM e interatividade</p>
+        </div>
       </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/github.png" alt="GitHub">
+          <p>GitHub</p>
+        </div>
+
+        <div class="card-back">
+          <strong>GitHub</strong>
+          <p>Nível: Intermediário</p>
+          <p>Versionamento e publicação de projetos</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- VS Code -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/vscode.png" alt="VSCode">
+          <p>VSCode</p>
+        </div>
+
+        <div class="card-back">
+          <strong>VSCode</strong>
+          <p>Nível: Intermediário</p>
+          <p>Organização de código e extensões de desenvolvimento</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Figma -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/figma.png" alt="Figma">
+          <p>Figma</p>
+        </div>
+
+        <div class="card-back">
+          <strong>Figma</strong>
+          <p>Nível: Intermediário</p>
+          <p>Protótipos de interface e design UI/UX</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Canva -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/canva.png" alt="Canva">
+          <p>Canva</p>
+        </div>
+
+        <div class="card-back">
+          <strong>Canva</strong>
+          <p>Nível: Intermediário</p>
+          <p>Criação de layouts e design visual para web</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- React -->
+    <div class="skill-card" onclick="virarCard(this)">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <img src="imagens/React.png" alt="React">
+          <p>React</p>
+        </div>
+
+        <div class="card-back">
+          <strong>React</strong>
+          <p>Nível: Intermediário</p>
+          <p>Componentes e estrutura de aplicações</p>
+        </div>
+      </div>
+    </div>
 
     </div>
 </section>
 
 <section id="projetos">
-  <h2>Meus Projetos</h2>
+  <img src="imagens/projetos.PNG" alt="Meus Projetos" class="titulo-projetos">
 
   <div class="container-projetos">
 
@@ -120,7 +218,7 @@
 </section>
 
 <section class="contato" id="contato">
-  <h2>Contato</h2>
+  <img src="imagens/contato.png" alt="Contato" class="titulo-contato">
 
   <div class="contato-container">
 
