@@ -11,29 +11,6 @@ body {
   color: #142e2e;
 }
 
- .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 20px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-img {
-    width: 260px;
-    margin-top: 30px;
-  }
-
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-text p {
-    font-size: 15px;
-  }
-
 /* HEADER */
 header {
   display: flex;
@@ -63,12 +40,14 @@ nav a:hover {
   transform: translate(5px, -3px) scale(1.05);
 }
 
+/* HERO */
+
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+   justify-content: space-between;
   padding: 85px 10%;
-  gap: 3cm;
+  gap: 80px;
 }
 
 .hero-img {
@@ -86,6 +65,10 @@ nav a:hover {
 
 .hero-img:hover {
   transform: scale(1.05);
+}
+
+.hero-text {
+  max-width: 100%;
 }
 
 /* TÍTULO */
@@ -106,19 +89,22 @@ nav a:hover {
 
 #skills, #projetos, #contato {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .titulo-skills, .titulo-projetos, .titulo-contato {
-  max-width: 380px;
+  max-width: 360px;
+  transition: transform 0.25s ease;
+  cursor: default;
 }
 
+.titulo-skills:hover, .titulo-projetos:hover, .titulo-contato:hover {
+  transform: scale(1.05); /* zoom leve */
+}
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+/* RESPONSIVIDADE */
+
 @media (max-width: 992px) {
 
   .hero {
@@ -165,8 +151,7 @@ nav a:hover {
   transition: transform 1.1s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -215,8 +200,8 @@ nav a:hover {
 /* grade responsiva */
 .container-projetos {
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(4, minmax(350px, 1fr));
+  gap: 30px;
   max-width: 1600px;
   margin: 40px auto 0;
   justify-content: center;
@@ -224,10 +209,10 @@ nav a:hover {
 
 /* CARD */
 .card-projeto {
-  height: 170px;
+  height: 130px;
   border-radius: 18px;
-  background-color: #879c57;
-  color: white;
+  background-color: #e7e9c9;
+  color: #546332;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,44 +232,59 @@ nav a:hover {
 
 /* CONTATO */
 .contato {
-  padding: 80px 10%;
+  padding: 80px 20px;
   text-align: center;
-}
-
-.contato h2 {
   color: #546332;
 }
 
-.contato-container {
+.rede {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes-box {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 80px;
+  margin: 40px auto;
 }
 
-.card-contato,
-.info-contato {
-  background-image: url('imagens/novofundo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 30px;
-  border-radius: 10px;
-  width: 280px;
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
+.rede img {
+  width: 145px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
-.card-contato:hover,
-.info-contato:hover {
-  border: 2px solid #879c57;
-  transform: translateY(-5px);
+.rede img:hover {
+  transform: scale(1.08);
 }
 
-.card-contato img {
-  margin: 15px 0;
+.rede p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #546332;
+}
+
+.fale-comigo {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #e7e9c975;
+  color: #546332;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fale-comigo h3 {
+  margin-bottom: 7px;
+}
+
+.fale-comigo p {
+  margin: 5px 0;
 }
 
 /* RESPONSIVO */
@@ -300,7 +300,3 @@ nav a:hover {
     grid-template-columns: repeat(1, minmax(350px, 1fr));
   }
 }
-
-
-
-/* 1- Coloquei o qr do insta, falta alterar o tamanho*/
