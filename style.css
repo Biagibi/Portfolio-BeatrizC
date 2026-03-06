@@ -284,7 +284,6 @@ nav a:hover {
 
 .janela-social{
   position: relative;
-  width: 90%;
   max-width: 700px;
   margin: auto;
 }
@@ -303,15 +302,15 @@ nav a:hover {
 .social-container{
   position: absolute;
   top: 30%;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   gap: 135px;
 }
 
 .social img {
-  width: 18vw;
-  max-width: 140px;
+  width: 21vw;
+  max-width: 160px;
   min-width: 70px;
   transition: transform 0.3s ease;
 }
